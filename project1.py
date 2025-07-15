@@ -65,11 +65,12 @@ def dataset_visualisation():
         
     st.divider()
     st.title("Visualisation")
-    fig= sns.pairplot(df,hue="Failure Type")
-    #plt.xticks(rotation=20)
-    #fig=ax.get_figure()
+    fig, ax = plt.subplots(figsize=(10, 6))
+    sns.countplot(data=df, y='UDI', x='Failure Type', ax=ax)
+    ax.set_title("Count of Failure Types vs UDI")
+    plt.xticks(rotation=45, ha='right')
+    plt.tight_layout()
     st.pyplot(fig)
-    
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, stratify=y, test_size=0.2, random_state=42)
 
