@@ -22,14 +22,12 @@ def about_model():
     st.markdown("By relying on condition‑based insights—rather than purely scheduled servicing—your maintenance becomes smarter." \
     "You’ll save costs, lengthen machinery lifespan, and boost safety." \
     "Studies show this approach enhances:")
-    st.subheader("Outcome:")
-    st.markdown("1.Operational lifespan")
-    st.markdown("2.Cost Efficiency")
-    st.markdown("3.Safety & reliability")
-    st.subheader("Benefits:")
-    st.markdown("1.Machines run longer without failure")
-    st.markdown("2.Reduces labor, parts, and energy costs")
-    st.markdown("3.Minimizes accidents and improves quality")
+
+    op={
+        'Output':["1.Operational lifespan","2.Cost Efficiency","3.Safety & reliability"],
+        'Benefits':["Machines run longer without failure","Reduces labor, parts, and energy costs","Minimizes accidents and improves quality"]
+    }
+    st.dataframe(op)
     st.divider()
     st.title("🛠️How does it works??")
     st.subheader("By analyzing sensor readings such as:" )
@@ -60,6 +58,7 @@ def dataset_visualisation():
         
     st.divider()
     st.title("Visualisation  of the Dataset")
+    sns.set_style(style="whitegrid")
     fig, ax = plt.subplots(figsize=(10,6))
     sns.countplot(data=df,x='Failure Type', ax=ax, color="green")
     ax.set_title("Count of Failure Types")
