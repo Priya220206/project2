@@ -24,9 +24,17 @@ def about_model():
     "Studies show this approach enhances:")
     st.markdown("""| Outcome              | Benefit                                           |
     | -------------------- | ------------------------------------------------- |
-    | Operational lifespan | Machines run longer without failure ([Reddit][1]) |
-    | Cost-efficiency      | Reduces labor, parts, and energy costs            |
+    |  |  ([Reddit][1]) |
+    | Cost-efficiency      |             |
     | Safety & reliability | Minimizes accidents and improves quality          |""")
+    st.subheader("Outcome:")
+    st.markdown("1.Operational lifespan")
+    st.markdown("2.Cost Efficiency")
+    st.markdown("3.Safety & reliability")
+    st.subheader("Benefits:")
+    st.markdown("1.Machines run longer without failure")
+    st.markdown("2.Reduces labor, parts, and energy costs")
+    st.markdown("3.Minimizes accidents and improves quality")
     st.divider()
     st.title("🛠️How does it works??")
     st.subheader("By analyzing sensor readings such as:" )
