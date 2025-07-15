@@ -17,7 +17,16 @@ def about_model():
     FleetGuard AI continuously monitors vital parameters—temperature, rotational speed, torque—to detect abnormalities before they become failures.
     Powered by an ensemble of Random Forest classifiers, the system captures subtle deviations across sensor streams and votes on risk levels,
     offering a reliable, real‑time prediction of equipment health""")
-
+    st.divider()
+    st.subheader("🎯 Proactive, Data-Driven Maintenance")
+    st.markdown("By relying on condition‑based insights—rather than purely scheduled servicing—your maintenance becomes smarter." \
+    "You’ll save costs, lengthen machinery lifespan, and boost safety." \
+    "Studies show this approach enhances:")
+    st.markdown("""| Outcome              | Benefit                                           |
+    | -------------------- | ------------------------------------------------- |
+    | Operational lifespan | Machines run longer without failure ([Reddit][1]) |
+    | Cost-efficiency      | Reduces labor, parts, and energy costs            |
+    | Safety & reliability | Minimizes accidents and improves quality          |""")
     st.divider()
     st.title("🛠️How does it works??")
     st.subheader("By analyzing sensor readings such as:" )
