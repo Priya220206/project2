@@ -22,11 +22,6 @@ def about_model():
     st.markdown("By relying on condition‑based insights—rather than purely scheduled servicing—your maintenance becomes smarter." \
     "You’ll save costs, lengthen machinery lifespan, and boost safety." \
     "Studies show this approach enhances:")
-    st.markdown("""| Outcome              | Benefit                                           |
-    | -------------------- | ------------------------------------------------- |
-    |  |  ([Reddit][1]) |
-    | Cost-efficiency      |             |
-    | Safety & reliability | Minimizes accidents and improves quality          |""")
     st.subheader("Outcome:")
     st.markdown("1.Operational lifespan")
     st.markdown("2.Cost Efficiency")
@@ -64,11 +59,16 @@ def dataset_visualisation():
         st.code(X.dtypes)
         
     st.divider()
-    st.title("Visualisation")
-    fig, ax = plt.subplots(figsize=(10, 6))
-    sns.countplot(data=df, y='UDI', x='Failure Type', ax=ax)
-    ax.set_title("Count of Failure Types vs UDI")
+    st.title("Visualisation  of the Dataset")
+    fig, ax = plt.subplots(figsize=(10,6))
+    sns.countplot(data=df,x='Failure Type', ax=ax, color="green")
+    ax.set_title("Count of Failure Types")
     plt.xticks(rotation=45, ha='right')
+    plt.tight_layout()
+    st.pyplot(fig)
+    fig, ax = plt.subplots(figsize=(10,6))
+    sns.barplot(data=df,x='Target',y='UDI', ax=ax, color="blue")
+    ax.set_title("Target vs UDI")
     plt.tight_layout()
     st.pyplot(fig)
 
