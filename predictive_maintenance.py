@@ -1,15 +1,20 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
-from sklearn import model_selection
+
 import streamlit as st
 import pandas as pd
+pd.set_option('display.width',None)
+
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import ConfusionMatrixDisplay, RocCurveDisplay, classification_report, roc_auc_score
+from sklearn.metrics import ConfusionMatrixDisplay, RocCurveDisplay, classification_report
 from sklearn.pipeline import Pipeline
 from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import StandardScaler
+
+import warnings
+warnings.filterwarnings('ignore')
 
 def about_model():
     st.title("🔧 Predictive Maintenance Classifier")
