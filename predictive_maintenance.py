@@ -12,7 +12,7 @@ from sklearn.preprocessing import StandardScaler
 
 def about_model():
     st.title("🔧 Predictive Maintenance Classifier")
-    st.subheader("🔧 FleetGuard AI — Your Equipment’s Early-Warning System")
+    st.subheader("🔧 FleetGuard AI: Your Equipment’s Early-Warning System")
     st.markdown("""Stay ahead of breakdowns, not behind them.In heavy‑duty industrial environments, unplanned downtime impacts both productivity and profitability.
     FleetGuard AI continuously monitors vital parameters—temperature, rotational speed, torque—to detect abnormalities before they become failures.
     Powered by an ensemble of Random Forest classifiers, the system captures subtle deviations across sensor streams and votes on risk levels,
