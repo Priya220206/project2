@@ -47,7 +47,7 @@ Machine Learning models can detect subtle patterns that signal impending faults.
 
 ## 🔗 Important Links  
 - **Dataset source:** [Link To Dataset](https://www.kaggle.com/datasets/shivamb/machine-predictive-maintenance-classification)
-- **Streamlit App:** [Hosted App Link](https://project-predictive-maintenance.streamlit.app/)   
+- **Streamlit App:** [Hosted App Link](https://project1-predictive-maintenance.streamlit.app/)   
 
 
 ## 👨‍💻 Author
