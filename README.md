@@ -7,56 +7,51 @@ This interactive Streamlit app estimates the failure in machine based on key fea
 ---
 
 ## 🧾 Student Information  
-- **Name:** Priya Gupta  
+- Priya Gupta  
 - [![LinkedIn](https://img.shields.io/badge/LinkedIn-Priya-blue?logo=linkedin)](https://www.linkedin.com/in/priya-gupta-b37731326/)   
 
 ---
 
 ## 📝 Project Description  
-This project aims to understand key factors influencing mental health among tech employees and build data-driven solutions for improving workplace well-being. It uses machine learning techniques to perform classification, regression, and clustering tasks and presents results via an interactive Streamlit dashboard.
+In heavy duty industrial environments, unplanned downtime impacts both productivity and profitability.
+FleetGuard AI continuously monitors vital parameters : temperature, rotational speed, torque—to detect abnormalities before they become failures.
+Powered by an ensemble of Random Forest classifiers, the system captures subtle deviations across sensor streams and votes on risk levels,offering a reliable, real-time prediction of equipment health.
+By relying on condition based insights rather than purely scheduled servicing—your maintenance becomes smarter.
+You'll save costs, lengthen machinery lifespan, and boost safety.
 
 ### **Objectives**
-To understand the key factors influencing mental health issues among employees in the tech industry and
-build data-driven solutions for:
-- **Classification Task:** Predict whether an individual is likely to seek mental health treatment.
-- **Regression Task:** Predict the age of an individual based on personal and workplace attributes, supporting age-targeted intervention design.
-- **Unsupervised Task:** Segment tech employees into distinct clusters based on mental health indicators to aid in tailored HR policies
+To understand the key factors causing failure in machines to increase the lifesapn of machines and for better working.
+Key Factors are:
+🌡️🔥Temperature
+⚙️🔃Rotational Speed
+🔧⚙️Torque
+Machine Learning models can detect subtle patterns that signal impending faults.
 
 ---
 
-## 📂 Project Structure  
-```
-OL-ID
-├── EDA
-│ ├──EDA.ipynb
-├── models/ # Machine Learning Models
-│ ├── Classification.ipynb
-│ ├── Regression.ipynb
-│ ├── Unsupervised_learning.py
-├── streamlit/ # Streamlit Application
-│ ├── App_deployment.py
-├── requirements.txt
-└── README.md
-```
+## 🛠 Technologies Used
 
----
+- Python (Pandas, NumPy, Scikit-learn)
+- Matplotlib & Seaborn (for data visualization)
+- Streamlit (for building the web app)
+
+## 🚀 Key Features
+
+- 📊 *EDA & Visualization* of dataset insights
+- 🤖 *Random Forest Regressor* as the main model
+- 🧾 *Interactive Streamlit Form* for collecting machine info
+- 🧠 *Prediction Output* based on selected features
+- 📚 *Input Glossary* with brief definitions
+- ✨ Clean UI layout using st.columns for better UX
+
 
 ## 🔗 Important Links  
-- **EDA Notebook:** [Link To EDA Notebook](https://github.com/Priya220206/OL-25-LP-107/blob/main/EDA.ipynb)
-- **Classification Notebook:** [Link to Classification Notebook](https://github.com/Priya220206/OL-25-LP-107/blob/main/Classification.ipynb)
-- **Regression Notebook:** [Link to Regression Notebook](https://github.com/Priya220206/OL-25-LP-107/blob/main/Regression.ipynb)
-- **Clustering Notebook:** [Link to Clustering Notebook](https://github.com/Priya220206/OL-25-LP-107/blob/main/Unsupervised_learning.ipynb)
-- **Streamlit App:** [Hosted App Link](https://capstone-project-ol-25-lp-107.streamlit.app/)  
-- **Technical Report:** [Link to Medium Blog](https://medium.com/@priyagupta22026/cracking-the-code-what-the-osmi-survey-tells-us-about-mental-health-in-tech-2aa8e254a5ed) 
+- **Dataset source:** [Link To Dataset](https://www.kaggle.com/datasets/shivamb/machine-predictive-maintenance-classification)
+- **Streamlit App:** [Hosted App Link](https://project-predictive-maintenance.streamlit.app/)   
 
-## Demo  
 
-Watch the project in action:  
+## 👨‍💻 Author
+*Priya*
+> [📎 Linkedin](https://www.linkedin.com/in/priya-gupta-b37731326/)  
 
-- **Streamlit App Demo:** [Click Here to View Demo](https://capstone-project-ol-25-lp-107.streamlit.app/)  
-
----
-
-## Acknowledgements
-- Dataset Source: [Mental Health in Tech Survey](https://www.kaggle.com/datasets/osmi/mental-health-in-tech-survey)
-- OpenLearn Cohort 1.0 Mentors & Team
+> 🚫 Do not rely on this model for real-world financial or business decisions.

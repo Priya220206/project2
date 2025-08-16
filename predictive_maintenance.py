@@ -1,4 +1,5 @@
 from matplotlib import pyplot as plt
+import numpy as np
 import seaborn as sns
 from sklearn import model_selection
 import streamlit as st
@@ -13,14 +14,14 @@ from sklearn.preprocessing import StandardScaler
 def about_model():
     st.title("🔧 Predictive Maintenance Classifier")
     st.subheader("🔧 FleetGuard AI: Your Equipment’s Early-Warning System")
-    st.markdown("""Stay ahead of breakdowns, not behind them.In heavy‑duty industrial environments, unplanned downtime impacts both productivity and profitability.
-    FleetGuard AI continuously monitors vital parameters—temperature, rotational speed, torque—to detect abnormalities before they become failures.
+    st.markdown("""Stay ahead of breakdowns, not behind them.In heavy duty industrial environments, unplanned downtime impacts both productivity and profitability.
+    FleetGuard AI continuously monitors vital parameters : temperature, rotational speed, torque—to detect abnormalities before they become failures.
     Powered by an ensemble of Random Forest classifiers, the system captures subtle deviations across sensor streams and votes on risk levels,
-    offering a reliable, real‑time prediction of equipment health""")
+    offering a reliable, real-time prediction of equipment health.""")
     st.divider()
     st.subheader("🎯 Proactive, Data-Driven Maintenance")
-    st.markdown("By relying on condition‑based insights—rather than purely scheduled servicing—your maintenance becomes smarter." \
-    "You’ll save costs, lengthen machinery lifespan, and boost safety." \
+    st.markdown("By relying on condition based insights rather than purely scheduled servicing—your maintenance becomes smarter." \
+    "You'll save costs, lengthen machinery lifespan, and boost safety." \
     "Studies show this approach enhances:")
 
     op={
@@ -97,7 +98,7 @@ def prediction_model():
     st.subheader("User Input Features")
     st.dataframe(input_df)
 
-    import numpy as np
+
 
     clf_temp = RandomForestClassifier(n_estimators=100, class_weight="balanced", random_state=42)
     clf_temp.fit(X_train, y_train)
